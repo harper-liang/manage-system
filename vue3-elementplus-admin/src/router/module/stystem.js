@@ -2,7 +2,7 @@ import Layout from '@/layout'
 const routes = [
   { path: '/login', component: () => import('@/views/login/index'), hidden: true },
   { path: '/404', component: () => import('@/views/error/notFound'), hidden: true },
-  { path: '/', component: Layout, redirect: '/system/user' },
+  { path: '/', component: Layout, redirect: '/login' },
   {
     path: '/system',
     component: Layout,

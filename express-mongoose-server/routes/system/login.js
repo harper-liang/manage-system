@@ -4,7 +4,7 @@ var router = express.Router();
 var User = require('../../model/system/User')
 router.post('/getLoginCode', (req, res, next)=>{
   var svgCaptcha =  require("./../../utils/captcha")
-  console.log(svgCaptcha)
+  console.log(svgCaptcha,"11111111111111111")
   // 生成验证码
   res.send(svgCaptcha)
   // 点击提交后，判断验证码是否过期
